@@ -230,3 +230,83 @@ h2 {
 .info__switch:checked ~ .info__headline::before {
   background-color: #67aefc;
 }
+/* <-----stages-----> */
+.stages > div > h2 {
+  text-align: center;
+}
+.stages .wrapper {
+  height: 908px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  width: 572px;
+  height: 390px;
+  border: 2px solid #67aefc;
+  border-radius: 15px;
+  padding: 0 30px 0 70px;
+  display: flex;
+  align-items: center;
+  margin: 0 26px;
+}
+
+.slider-list {
+  display: flex;
+}
+
+.slider-list {
+  position: absolute;
+  top: 248px;
+}
+
+.button-block {
+  text-align: center;
+  margin-top: 556px;
+}
+
+.arrow-button {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 2px solid #67aefc;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.arrow-button:hover {
+  background-color: #67aefc;
+  border: 2px solid #67aefc;
+}
+
+.left::before {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 16px;
+  border: solid black;
+  border-width: 2px 0 0 2px;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.right::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 16px;
+  border: solid black;
+  border-width: 2px 0 0 2px;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.left:hover::before,
+.right:hover::before {
+  border: solid white;
+  border-width: 2px 0 0 2px;
+}
