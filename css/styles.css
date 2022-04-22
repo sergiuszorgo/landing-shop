@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   /* overflow: hidden; */
   font-family: "Montserrat", sans-serif;
@@ -17,6 +23,28 @@ a {
 h2 {
   font-weight: 800;
   font-size: 32px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  height: 58px;
+  padding: 0.375rem 0.75rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #292929;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #6eb1fb;
+  border-radius: 10px;
+  transition: border 0.15s ease-in-out;
+}
+
+input:focus {
+  border: 2px solid #6eb1fb;
+  outline: none;
 }
 
 .header-top {
@@ -126,6 +154,7 @@ h2 {
 .hero-btn {
   color: #ffffff;
   border-radius: 5px;
+  background: #75e169;
   border: 2px solid transparent;
   padding: 22px 92px;
   font-size: 15px;
@@ -133,11 +162,11 @@ h2 {
   text-transform: uppercase;
 }
 
-.hero-btn:link,
+/* .hero-btn:link,
 .hero-btn:visited,
 .hero-btn:focus {
   background: #75e169;
-}
+} */
 
 .hero-btn:hover {
   border: 2px solid #67aefc;
@@ -152,6 +181,9 @@ h2 {
 
 .features {
   background-color: #daecff;
+  background-image: url(/img/bag.png);
+  background-repeat: no-repeat;
+  background-position: right 144px bottom 92px;
 }
 
 .features > div > h2 {
@@ -182,6 +214,7 @@ h2 {
   font-weight: 400;
   color: #111111;
   cursor: pointer;
+  /* transition: 0.4s; */
 }
 
 .info__body {
@@ -227,10 +260,19 @@ h2 {
   transform: rotate(225deg) translateY(-6px) translateX(-6px);
 }
 
+.info__switch:checked ~ .info__headline {
+  font-weight: 700;
+}
+
 .info__switch:checked ~ .info__headline::before {
   background-color: #67aefc;
 }
 /* <-----stages-----> */
+.stages {
+  background-image: url(/img/sphere-blue-small.png), url(/img/wave-blue.png);
+  background-repeat: no-repeat;
+  background-position: 188px 130px, right 186px bottom 48px;
+}
 .stages > div > h2 {
   text-align: center;
 }
@@ -313,6 +355,9 @@ h2 {
 /* <--------examples----------> */
 .examples {
   background-color: #daecff;
+  background-image: url(/img/wave-pink.png), url(/img/sphere-blue.png);
+  background-repeat: no-repeat;
+  background-position: 24px 300px, right 122px bottom 244px;
 }
 
 .examples > div > h2 {
@@ -364,4 +409,64 @@ h2 {
 
 .porthpolio-card:hover .porthpolio-text {
   transform: translateY(0);
+}
+
+/* <------information------> */
+
+.information {
+  background-image: url(/img/shape.png), url(/img/orders.png);
+  background-repeat: no-repeat;
+  background-position: 152px 150px, right 144px bottom 104px;
+}
+
+.information .wrapper {
+  padding-top: 120px;
+  padding-bottom: 180px;
+}
+.info-descript {
+  width: 670px;
+}
+
+.info-descript button {
+  padding: 22px 56px;
+}
+
+.info-descript p {
+  margin-top: 52px;
+  margin-bottom: 44px;
+}
+
+/* <------discussion------> */
+.discussion {
+  background-color: #daecff;
+  background-image: url(/img/phone-call.png), url(/img/wawe-with-sphere.png);
+  background-repeat: no-repeat;
+  background-position: 232px 262px, right 404px bottom 340px;
+}
+
+.discussion .wrapper {
+  padding-top: 180px;
+  padding-bottom: 128px;
+}
+
+.discussion-descript {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.discussion-descript h2,
+.discussion-descript p {
+  text-align: center;
+}
+
+.discussion-descript p {
+  line-height: 175%;
+  margin: 30px 0 30px;
+}
+
+.discussion-descript input {
+  margin-bottom: 30px;
 }
