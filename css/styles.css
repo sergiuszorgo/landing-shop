@@ -16,6 +16,15 @@ body {
   font-size: 18px;
 }
 
+.icon-logo-head {
+  width: 242px;
+  height: 60px;
+}
+
+ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -63,7 +72,7 @@ input:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 28px 0;
+  padding: 18px 0;
 }
 
 .wrapper-head {
@@ -347,6 +356,11 @@ input:focus {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
+
+.left {
+  margin-right: 30px;
+}
+
 .left:hover::before,
 .right:hover::before {
   border: solid white;
@@ -469,4 +483,82 @@ input:focus {
 
 .discussion-descript input {
   margin-bottom: 30px;
+}
+/* <------footer------> */
+.footer {
+  background-color: #64abf9;
+}
+.footer .wrapper {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.addres {
+  display: flex;
+  justify-content: center;
+}
+
+.foot-logo {
+  margin-right: 120px;
+}
+
+.icon-logo {
+  width: 280px;
+  height: 66px;
+}
+
+.social {
+  width: 25px;
+  height: 25px;
+}
+
+.social-dock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 46px;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 38px;
+}
+
+.social-phones {
+  /* margin-right: 120px; */
+  margin: 20px 120px 0 0;
+}
+
+.viber:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.viber-phone {
+  display: inline-flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
+.icon-send {
+  margin-right: 10px;
+  width: 22px;
+  height: 22px;
+}
+
+.mail-send {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
+
+.copiright {
+  margin-top: 120px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
 }
