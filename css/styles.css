@@ -191,7 +191,7 @@ input:focus {
 
 .features {
   background-color: #daecff;
-  background-image: url(/img/bag.png);
+  background-image: url(../img/bag.png);
   background-repeat: no-repeat;
   background-position: right 144px bottom 92px;
 }
@@ -279,7 +279,7 @@ input:focus {
 }
 /* <-----stages-----> */
 .stages {
-  background-image: url(/img/sphere-blue-small.png), url(/img/wave-blue.png);
+  background-image: url(../img/sphere-blue-small.png), url(../img/wave-blue.png);
   background-repeat: no-repeat;
   background-position: 188px 130px, right 186px bottom 48px;
 }
@@ -386,7 +386,7 @@ input:focus {
 /* <--------examples----------> */
 .examples {
   background-color: #daecff;
-  background-image: url(/img/wave-pink.png), url(/img/sphere-blue.png);
+  background-image: url(../img/wave-pink.png), url(../img/sphere-blue.png);
   background-repeat: no-repeat;
   background-position: 24px 300px, right 122px bottom 244px;
 }
@@ -445,7 +445,7 @@ input:focus {
 /* <------information------> */
 
 .information {
-  background-image: url(/img/shape.png), url(/img/orders.png);
+  background-image: url(../img/shape.png), url(../img/orders.png);
   background-repeat: no-repeat;
   background-position: 152px 150px, right 144px bottom 104px;
 }
@@ -470,7 +470,7 @@ input:focus {
 /* <------discussion------> */
 .discussion {
   background-color: #daecff;
-  background-image: url(/img/phone-call.png), url(/img/wawe-with-sphere.png);
+  background-image: url(../img/phone-call.png), url(../img/wawe-with-sphere.png);
   background-repeat: no-repeat;
   background-position: 232px 262px, right 404px bottom 340px;
 }
