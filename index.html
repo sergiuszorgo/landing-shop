@@ -140,8 +140,13 @@
       <a name="stages"></a>
       <div class="wrapper">
         <h2 class="wrapper-head">Этапы разработки интернет-магазина</h2>
-        <div class="slider-list">
-          <div class="slide">
+        <!-- Разметка слайдера -->
+    <div class="itcss">
+      <div class="itcss__wrapper">
+        <div class="itcss__items">
+          <div class="itcss__item">
+            <!-- Контент 1 слайда -->
+            <div class="slide">
             <div class="descript">
               <h3>1. Анализ</h3>
               <p>
@@ -152,7 +157,10 @@
             </div>
             <img src="/img/analiz.png" alt="" />
           </div>
-          <div class="slide">
+          </div>
+          <div class="itcss__item">
+            <!-- Контент 2 слайда -->
+            <div class="slide">
             <div class="descript">
               <h3>2. Визуальное решение</h3>
               <p>
@@ -164,7 +172,10 @@
             </div>
             <img src="/img/cake.png" alt="" />
           </div>
-          <div class="slide">
+          </div>
+          <div class="itcss__item">
+            <!-- Контент 3 слайда -->
+            <div class="slide">
             <div class="descript">
               <h3>3. Техническая реализация</h3>
               <p>
@@ -175,7 +186,10 @@
             </div>
             <img src="/img/barcode.png" alt="" />
           </div>
-          <div class="slide">
+          </div>
+          <div class="itcss__item">
+            <!-- Контент 4 слайда -->
+            <div class="slide">
             <div class="descript">
               <h3>4. Наполнение контентом</h3>
               <p>
@@ -186,7 +200,10 @@
             </div>
             <img src="/img/content.png" alt="" />
           </div>
-          <div class="slide">
+          </div>
+          <div class="itcss__item">
+            <!-- Контент 5 слайда -->
+            <div class="slide">
             <div class="descript">
               <h3>5. Тестирование</h3>
               <p>
@@ -198,10 +215,13 @@
             </div>
             <img src="/img/testing.png" alt="" />
           </div>
+          </div>
         </div>
-        <div class="button-block">
-          <button type="button" class="arrow-button left"></button>
-          <button type="button" class="arrow-button right"></button>
+      </div>
+    </div>
+        <div class="button-block-w">
+          <button type="button" class="btn btn-prev"></button>
+          <button type="button" class="btn btn-next"></button>
         </div>
       </div>
     </section>
@@ -280,8 +300,8 @@
         </ul>
       </div>
     </section>
+    <!-- Необходимо больше информации? -->
     <section class="information">
-      <a name="moreinfo"></a>
       <div class="wrapper">
         <div class="info-descript">
           <h2>Необходимо больше информации?</h2>
@@ -291,12 +311,12 @@
             для стартапа, обратитесь к нашему веб дизайнеру. За выгодную цену и
             короткий период времени, он поможет визуализировать ваш веб проект.
           </p>
-          <button class="hero-btn">Оставить заявку</button>
-          <!-- <a class="hero-btn">Оставить заявку</a> -->
+          <a href="#discussion" class="hero-btn">Оставить заявку</a>
         </div>
         <div></div>
       </div>
     </section>
+    <!-- Обсудить проект -->
     <section class="discussion">
       <a name="discussion"></a>
       <div class="wrapper">
@@ -322,13 +342,20 @@
         </div>
       </div>
     </section>
+    <!-- Footer  -->
     <section class="footer">
+      <a name="moreinfo"></a>
       <div class="wrapper">
         <div class="addres">
           <div class="foot-logo">
-            <svg class="icon-logo">
+            <a href="">
+              <svg class="icon-logo">
               <use href="./img/cvg/sprite.svg#logo"></use>
             </svg>
+            </a>
+            <!-- <svg class="icon-logo">
+              <use href="./img/cvg/sprite.svg#logo"></use>
+            </svg> -->
             <ul class="social-dock">
               <li class="social-item">
                 <a href="https://www.instagram.com/" target="_blank">
@@ -400,5 +427,23 @@
         </div>
       </div>
     </section>
+    <!-- Подключаем JS слайдера -->
+    <script defer src="./js/simple-adaptive-slider.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // инициализация слайдера
+        const slider = new ItcSimpleSlider(".itcss");
+        // назначим обработчик при нажатии на кнопку .btn-prev
+        document.querySelector(".btn-prev").onclick = () => {
+          // перейдём к предыдущему слайду
+          slider.prev();
+        };
+        // назначим обработчик при нажатии на кнопку .btn-next
+        document.querySelector(".btn-next").onclick = () => {
+          // перейдём к следующему слайду
+          slider.next();
+        };
+      });
+    </script>
   </body>
 </html>
